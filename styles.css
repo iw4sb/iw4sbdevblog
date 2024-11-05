@@ -1,0 +1,117 @@
+/* Dark Theme Styles for Your Blog */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #181818; /* Dark background */
+    color: #f4f4f4; /* Light text color */
+    margin: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.profile-header {
+    background-color: #333;     /* Header background color */
+    color: #fff;                /* Text color */
+    text-align: center;         /* Center align the text */
+    padding: 20px 0;           /* Padding for the header */
+    width: 100%;                /* Full width */
+    margin: 0;                  /* No margin */
+}
+
+.profile-info {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.posts {
+    margin-top: 20px;
+}
+
+.post {
+    background: #2c2c2c; /* Darker card background */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Subtle light shadow */
+}
+
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.image-grid img {
+    width: calc(25% - 10px);
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.2s; /* Smooth zoom effect */
+}
+
+.image-grid img:hover {
+    transform: scale(1.05); /* Slightly enlarge image on hover */
+}
+
+.date {
+    display: block;
+    margin-top: 10px;
+    color: #bbb; /* Lighter color for date */
+}
+
+/* Lightbox Styles */
+.lightbox {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0, 0, 0, 0.9); /* Dark background with transparency */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.lightbox-content {
+    max-width: 90%; /* Responsive max width */
+    max-height: 90%; /* Responsive max height */
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.logo {
+    display: block;         /* Ensures the image is treated as a block element */
+    margin: 0 auto;       /* Centers the logo horizontally */
+    max-width: 100%;      /* Ensures the logo is responsive */
+    height: auto;         /* Keeps the aspect ratio */
+}
+
+.author-info {
+    display: flex;                /* Use flexbox for layout */
+    align-items: center;         /* Center align vertically */
+    margin-bottom: 10px;        /* Space below author info */
+}
+
+.profile-pic {
+    width: 40px;                /* Set the width of the profile picture */
+    height: 40px;               /* Set the height of the profile picture */
+    border-radius: 50%;         /* Makes the image circular */
+    margin-right: 10px;         /* Space between picture and name */
+    object-fit: cover;          /* Ensures the image covers the space without distortion */
+}
+
+.author-name {
+    font-weight: bold;          /* Make the author's name bold */
+    font-size: 14px;           /* Set the font size for the name */
+    color: #ffffff;            /* Set text color (or whatever suits your design) */
+}
